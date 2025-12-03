@@ -95,23 +95,14 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api/improvements', improvementRoutes);
 app.use('/api/notifications', notificationRoutes);
 //app.use('/api/memory-graph', memoryGraphRoutes);
-
-
-
-
-// Test route
-app.get("/", (req, res) => {
-  res.send("Career-GPT Backend is running  (ESM)");
-});
 // Start server
 mongoose
   .connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    server.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}...`)
+    server.listen(PORT, '0.0.0.0', () => {
+      console.log(`🚀 Server started on port ${PORT}`);
       console.log(`✅ Socket.io initialized`);
       console.log(`✅ WebSocket URL: ws://localhost:${PORT}`);
-    }
-    );
+    });
   })
   .catch((err) => console.error("MongoDB connection failed:", err));
