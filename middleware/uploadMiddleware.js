@@ -1,45 +1,58 @@
+// middleware/uploadMiddleware.js
 import multer from 'multer';
+import logger from '../utils/logger.js';
 
+// Configure multer to use MEMORY storage (not disk)
 const storage = multer.memoryStorage();
 
+// File filter
 const fileFilter = (req, file, cb) => {
-  if (file.mimetype.startsWith('image/')) {
+  const allowedTypes = [
+    'application/pdf',
+    'application/msword',
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+  ];
+
+  if (allowedTypes.includes(file.mimetype)) {
     cb(null, true);
   } else {
-    cb(new Error('Only image files are allowed'), false);
+    cb(new Error('Invalid file type. Only PDF, DOC, and DOCX files are allowed.'), false);
   }
 };
 
+// Configure multer
 const upload = multer({
   storage: storage,
   fileFilter: fileFilter,
   limits: {
-    fileSize: 5 * 1024 * 1024 // 5MB
+    fileSize: 5 * 1024 * 1024, // 5MB limit
+    files: 1 // Only 1 file
   }
 });
 
-// ADD THIS ERROR HANDLER FUNCTION
-export const handleUploadError = (err, req, res, next) => {
+// Error handling middleware
+const handleUploadError = (err, req, res, next) => {
   if (err instanceof multer.MulterError) {
-    // Multer error (file size, etc.)
+    logger.error('Multer error:', err);
     if (err.code === 'LIMIT_FILE_SIZE') {
       return res.status(400).json({
         success: false,
-        error: 'File too large. Maximum size is 5MB'
+        message: 'File size must be less than 5MB'
       });
     }
     return res.status(400).json({
       success: false,
-      error: `Upload error: ${err.message}`
+      message: `Upload error: ${err.message}`
     });
   } else if (err) {
-    // Other errors (file type, etc.)
+    logger.error('Upload error:', err);
     return res.status(400).json({
       success: false,
-      error: err.message
+      message: err.message || 'File upload failed'
     });
   }
   next();
 };
 
+export { upload, handleUploadError };
 export default upload;

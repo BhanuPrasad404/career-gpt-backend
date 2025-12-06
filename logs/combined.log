@@ -5969,3 +5969,667 @@
 {"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-03T15:13:27.254Z"}
 {"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-03T15:13:27.254Z"}
 {"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-03T15:13:27.255Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T14:59:12.713Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T14:59:12.715Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T14:59:12.716Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T14:59:12.716Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T14:59:12.717Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T15:23:52.698Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T15:23:52.700Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T15:23:52.700Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:23:52.701Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:23:52.701Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:35.588Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:35.590Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:35.591Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:35.591Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:35.592Z"}
+{"level":"info","message":" START: generateCareerRoadmap called","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.280Z"}
+{"level":"info","message":"User ID:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.280Z"}
+{"currentRole":"mid_level","currentSalary":12,"currentSkills":["Django","Vue.js","React Native","Git","CSS","Docker"],"experience":1,"goals":"Get a remote job","learningStyle":"reading","level":"info","location":"India","message":"User Data:","name":"Arun","service":"career-gpt-backend","targetRole":"Senior Dev","timeCommitment":"10-15","timestamp":"2025-12-04T15:36:43.281Z"}
+{"currentRole":"mid_level","currentSalary":12,"currentSkills":["Django","Vue.js","React Native","Git","CSS","Docker"],"experience":1,"goals":"Get a remote job","learningStyle":"reading","level":"info","location":"India","message":" Validating user data:","name":"Arun","service":"career-gpt-backend","targetRole":"Senior Dev","timeCommitment":"10-15","timestamp":"2025-12-04T15:36:43.282Z"}
+{"level":"info","message":" Validation passed","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.282Z"}
+{"level":"info","message":"Calling Gemini Service...","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.282Z"}
+{"level":"info","message":"START: generateCareerRoadmap called","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.283Z"}
+{"level":"info","message":"User ID:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.284Z"}
+{"currentRole":"mid_level","currentSalary":12,"currentSkills":["Django","Vue.js","React Native","Git","CSS","Docker"],"experience":1,"goals":"Get a remote job","learningStyle":"reading","level":"info","location":"India","message":"User Data:","name":"Arun","service":"career-gpt-backend","targetRole":"Senior Dev","timeCommitment":"10-15","timestamp":"2025-12-04T15:36:43.284Z"}
+{"level":"info","message":" Prompt sent to AI","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.284Z"}
+{"level":"info","message":"🌐 Calling Gemini API...","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.285Z"}
+{"level":"error","message":"Gemini API Error: API Error: 403 Forbidden - {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Your API key was reported as leaked. Please use another API key.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n","service":"career-gpt-backend","stack":"Error: API Error: 403 Forbidden - {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Your API key was reported as leaked. Please use another API key.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n\n    at GeminiService.callGeminiAPI (file:///C:/Users/banu/Desktop/career-gpt/career-gpt-backend/services/geminiService.js:81:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async GeminiService.generateCareerRoadmap (file:///C:/Users/banu/Desktop/career-gpt/career-gpt-backend/services/geminiService.js:24:24)\n    at async generateCareerRoadmap (file:///C:/Users/banu/Desktop/career-gpt/career-gpt-backend/controllers/careerRoadmapController.js:312:27)","timestamp":"2025-12-04T15:36:43.726Z"}
+{"level":"info","message":" Falling back to mock data","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.727Z"}
+{"level":"info","message":" AI Roadmap received","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.728Z"}
+{"level":"info","message":" Enhancing roadmap with PRODUCTION data","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.728Z"}
+{"level":"info","message":" Calculating enhanced salary progression for:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.728Z"}
+{"level":"info","message":" Roadmap enhanced with production algorithm","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.730Z"}
+{"level":"info","message":"Creating roadmap document for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:36:43.730Z"}
+{"_message":"RoadMap validation failed","errors":{"learningPath.resources":{"kind":"embedded","message":"Cast to embedded failed for value \"Python for Data Science and Machine Learning\" (type string) at path \"learningPath.resources\" because of \"ObjectParameterError\"","name":"CastError","path":"learningPath.resources","reason":{},"stringValue":"\"Python for Data Science and Machine Learning\"","value":"Python for Data Science and Machine Learning","valueType":"string"}},"level":"error","message":"FINAL ERROR: Career roadmap generation failed: RoadMap validation failed: learningPath.resources: Cast to embedded failed for value \"Python for Data Science and Machine Learning\" (type string) at path \"learningPath.resources\" because of \"ObjectParameterError\"","service":"career-gpt-backend","stack":"ValidationError: RoadMap validation failed: learningPath.resources: Cast to embedded failed for value \"Python for Data Science and Machine Learning\" (type string) at path \"learningPath.resources\" because of \"ObjectParameterError\"\n    at Document.invalidate (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\document.js:3358:32)\n    at model.$set (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\document.js:1480:12)\n    at model.$set (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\document.js:1227:14)\n    at model.$set (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\document.js:1117:14)\n    at model.Document (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\document.js:178:12)\n    at model.Model (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\model.js:127:12)\n    at new model (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\model.js:4834:15)\n    at createRoadmapDocument (file:///C:/Users/banu/Desktop/career-gpt/career-gpt-backend/controllers/careerRoadmapController.js:243:24)\n    at generateCareerRoadmap (file:///C:/Users/banu/Desktop/career-gpt/career-gpt-backend/controllers/careerRoadmapController.js:320:34)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-12-04T15:36:43.768Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T15:37:43.617Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T15:37:43.619Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T15:37:43.620Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:37:43.620Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:37:43.621Z"}
+{"level":"info","message":"CHAT TITLE SAVED:","service":"career-gpt-backend","timestamp":"2025-12-04T15:38:43.947Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T15:38:44.043Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T15:38:44.048Z"}
+{"level":"info","message":" Google API response status: 403","service":"career-gpt-backend","timestamp":"2025-12-04T15:38:44.401Z"}
+{"errorBody":"{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Your API key was reported as leaked. Please use another API key.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n","level":"error","message":" Google embedding API error:","service":"career-gpt-backend","status":403,"timestamp":"2025-12-04T15:38:44.406Z"}
+{"level":"error","message":" Invalid query embedding:","service":"career-gpt-backend","timestamp":"2025-12-04T15:38:44.406Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T15:38:44.407Z"}
+{"level":"error","message":" STREAM ERROR: Gemini API error: 403 - {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Your API key was reported as leaked. Please use another API key.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n","service":"career-gpt-backend","stack":"Error: Gemini API error: 403 - {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Your API key was reported as leaked. Please use another API key.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n\n    at addMessageToChat (file:///C:/Users/banu/Desktop/career-gpt/career-gpt-backend/controllers/chatController.js:357:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-12-04T15:38:44.565Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:15.455Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:15.457Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:15.458Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:15.458Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:15.459Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:27.608Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:27.609Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:28.412Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:28.737Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:28.738Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:28.738Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T15:44:30.005Z"}
+{"exp":1764946598,"iat":1764860198,"id":"68cab2d287b3af541ff0bc76","level":"info","message":"uest user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:37.929Z"}
+{"level":"info","message":" Request userId:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:37.929Z"}
+{"level":"info","message":" Using userId:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:37.929Z"}
+{"level":"info","message":"Looking for roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:37.930Z"}
+{"level":"info","message":" Found roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.033Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.215Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.307Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.308Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.391Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.392Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.395Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.478Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.479Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.553Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:38.554Z"}
+{"bulk":{"career-0-0":true,"career-0-1":true,"career-0-2":true},"level":"info","message":" UPDATE MILESTONE CALLED:","roadmapId":"69304e987e98a42eec4246d9","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:40.690Z"}
+{"level":"info","message":" PROCESSING BULK UPDATE:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:40.819Z"}
+{"level":"info","message":"CALCULATING PROGRESS AFTER UPDATE...","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:40.820Z"}
+{"level":"info","message":" PROGRESS UPDATED","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:40.895Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.388Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.495Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.496Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.571Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.572Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.576Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.660Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.661Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.732Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T15:46:44.733Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:49:10.558Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T15:49:10.710Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:49:10.813Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T15:49:10.984Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:31.040Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:31.219Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:31.338Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:31.505Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:46.762Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:46.764Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:46.765Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:46.765Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:46.766Z"}
+{"level":"info","message":"Attempting to send email","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T15:50:50.887Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:50.984Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:50.985Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:51.690Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:51.845Z"}
+{"level":"info","message":"User profile updated in RAG memory","service":"career-gpt-backend","timestamp":"2025-12-04T15:50:51.846Z"}
+{"error":"{\"errors\":[{\"message\":\"The provided authorization grant is invalid, expired, or revoked\",\"field\":null,\"help\":null}]}","level":"error","message":" SendGrid API error","service":"career-gpt-backend","status":401,"timestamp":"2025-12-04T15:50:51.978Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:02.264Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:02.267Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:02.268Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:02.269Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:02.270Z"}
+{"level":"info","message":"Attempting to send email","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T15:59:14.821Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:14.925Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:14.925Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:15.546Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:15.677Z"}
+{"level":"info","message":"User profile updated in RAG memory","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:15.678Z"}
+{"level":"info","message":" Email sent successfully","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T15:59:15.877Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"CHAT TITLE SAVED:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:42.157Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:42.241Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:42.242Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:42.821Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:43.010Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:43.011Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:43.012Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:43.989Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:50.609Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:50.785Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:50.879Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T15:59:51.030Z"}
+{"fileName":"245.jpg","fileSize":18929,"level":"info","message":"Processing profile picture upload:","mimeType":"image/jpeg","service":"career-gpt-backend","timestamp":"2025-12-04T16:01:19.616Z","userId":"68cab2d287b3af541ff0bc76"}
+{"folder":"synapsex/profile-pictures","level":"info","message":"Uploading to Cloudinary:","service":"career-gpt-backend","timestamp":"2025-12-04T16:01:19.617Z","userId":"68cab2d287b3af541ff0bc76"}
+{"cloudinaryUrl":"https://res.cloudinary.com/dtdvn4cyf/image/upload/v1764864082/synapsex/profile-pictures/profile_68cab2d287b3af541ff0bc76_1764864079617.jpg","level":"info","message":"Cloudinary upload successful:","service":"career-gpt-backend","timestamp":"2025-12-04T16:01:23.632Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"User profile picture updated successfully:","profilePicture":"https://res.cloudinary.com/dtdvn4cyf/image/upload/v1764864082/synapsex/profile-pictures/profile_68cab2d287b3af541ff0bc76_1764864079617.jpg","service":"career-gpt-backend","timestamp":"2025-12-04T16:01:23.711Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" START: generateCareerRoadmap called","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.682Z"}
+{"level":"info","message":"User ID:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.685Z"}
+{"currentRole":"mid_level","currentSalary":12,"currentSkills":["JavaScript","Python","Java","Node.js","React","TypeScript"],"experience":2,"goals":"Get a remote job","learningStyle":"reading","level":"info","location":"India","message":"User Data:","name":"bunny","service":"career-gpt-backend","targetRole":"Senior Dev","timeCommitment":"10-15","timestamp":"2025-12-04T17:43:14.686Z"}
+{"currentRole":"mid_level","currentSalary":12,"currentSkills":["JavaScript","Python","Java","Node.js","React","TypeScript"],"experience":2,"goals":"Get a remote job","learningStyle":"reading","level":"info","location":"India","message":" Validating user data:","name":"bunny","service":"career-gpt-backend","targetRole":"Senior Dev","timeCommitment":"10-15","timestamp":"2025-12-04T17:43:14.687Z"}
+{"level":"info","message":" Validation passed","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.687Z"}
+{"level":"info","message":"Calling Gemini Service...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.688Z"}
+{"level":"info","message":"START: generateCareerRoadmap called","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.689Z"}
+{"level":"info","message":"User ID:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.690Z"}
+{"currentRole":"mid_level","currentSalary":12,"currentSkills":["JavaScript","Python","Java","Node.js","React","TypeScript"],"experience":2,"goals":"Get a remote job","learningStyle":"reading","level":"info","location":"India","message":"User Data:","name":"bunny","service":"career-gpt-backend","targetRole":"Senior Dev","timeCommitment":"10-15","timestamp":"2025-12-04T17:43:14.692Z"}
+{"level":"info","message":" Prompt sent to AI","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.693Z"}
+{"level":"info","message":"🌐 Calling Gemini API...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:14.694Z"}
+{"level":"info","message":" AI Response received","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.587Z"}
+{"level":"info","message":" Raw AI response length:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.588Z"}
+{"level":"info","message":" Raw preview:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.589Z"}
+{"level":"info","message":"AI Roadmap parsed and normalized successfully","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.591Z"}
+{"level":"info","message":" AI Roadmap received","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.591Z"}
+{"level":"info","message":" Enhancing roadmap with PRODUCTION data","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.592Z"}
+{"level":"info","message":" Calculating enhanced salary progression for:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.593Z"}
+{"level":"info","message":" Roadmap enhanced with production algorithm","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.595Z"}
+{"level":"info","message":"Creating roadmap document for user:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.596Z"}
+{"buffer":{"data":[105,49,200,64,55,70,3,245,48,193,239,78],"type":"Buffer"},"level":"info","message":"Roadmap document saved with ID:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.884Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.984Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:28.985Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:29.295Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:29.601Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:29.602Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:29.603Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:29.909Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.033Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.033Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.034Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.598Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.754Z"}
+{"level":"info","message":"Smart RAG memory updated successfully!","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.755Z"}
+{"level":"info","message":"Database saved","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.755Z"}
+{"level":"info","message":" SUCCESS: Production roadmap generation completed","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:30.756Z"}
+{"exp":1764950354,"iat":1764863954,"id":"68cab2d287b3af541ff0bc76","level":"info","message":"uest user:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:35.452Z"}
+{"level":"info","message":" Request userId:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:35.453Z"}
+{"level":"info","message":" Using userId:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:35.454Z"}
+{"level":"info","message":"Looking for roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:35.454Z"}
+{"level":"info","message":" Found roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:35.757Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.094Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.261Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.262Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.362Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.363Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.369Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.458Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.459Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.562Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:36.563Z"}
+{"exp":1764950354,"iat":1764863954,"id":"68cab2d287b3af541ff0bc76","level":"info","message":"uest user:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:43.750Z"}
+{"level":"info","message":" Request userId:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:43.751Z"}
+{"level":"info","message":" Using userId:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:43.751Z"}
+{"level":"info","message":"Looking for roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:43.752Z"}
+{"level":"info","message":" Found roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:43.890Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.107Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.205Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.206Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.297Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.298Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.304Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.393Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.394Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.488Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T17:43:44.489Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T17:48:33.827Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T17:48:33.834Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T17:48:33.836Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:48:33.837Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:48:33.838Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T17:51:00.085Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T17:51:00.090Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T17:51:00.092Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:51:00.093Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:51:00.094Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T17:55:16.726Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T17:55:16.731Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T17:55:16.733Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:55:16.734Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:55:16.735Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T17:59:31.467Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T17:59:31.473Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T17:59:31.474Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:59:31.476Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T17:59:31.477Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:01:16.857Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:01:17.140Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:01:17.266Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:01:17.549Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:48.049Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:48.388Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:48.613Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:48.867Z"}
+{"level":"info","message":"Attempting to send email","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T18:03:53.747Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:53.914Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:53.915Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:54.881Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:55.079Z"}
+{"level":"info","message":"User profile updated in RAG memory","service":"career-gpt-backend","timestamp":"2025-12-04T18:03:55.080Z"}
+{"level":"info","message":" Email sent successfully","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T18:03:55.413Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:04:01.587Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:04:01.812Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:04:01.919Z"}
+{"level":"info","message":" Found 4 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:04:02.111Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T18:10:26.005Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T18:10:26.011Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:10:26.012Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:10:26.013Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T18:17:13.431Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T18:17:13.436Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:17:13.438Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:17:13.439Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:17:13.440Z"}
+{"level":"info","message":" Resume upload started...","service":"career-gpt-backend","timestamp":"2025-12-04T18:21:00.173Z"}
+{"level":"warn","message":"Resume upload failed - no file provided","service":"career-gpt-backend","timestamp":"2025-12-04T18:21:00.176Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:13.785Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:13.791Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:13.792Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:13.793Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:13.794Z"}
+{"level":"info","message":" Resume upload started...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:26.801Z"}
+{"fileName":"Bhanu Resume.pdf","fileSize":55509,"level":"info","message":"Processing resume upload","mimeType":"application/pdf","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:26.802Z","userId":"68cab2d287b3af541ff0bc76"}
+{"folder":"career-gpt/resumes","level":"info","message":" Uploading to Cloudinary","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:26.803Z","userId":"68cab2d287b3af541ff0bc76"}
+{"cloudinaryUrl":"https://res.cloudinary.com/dtdvn4cyf/image/upload/v1764872673/career-gpt/resumes/68cab2d287b3af541ff0bc76/resume_1764872666804_Bhanu_Resume.pdf.pdf","fileId":"career-gpt/resumes/68cab2d287b3af541ff0bc76/resume_1764872666804_Bhanu_Resume.pdf","fileName":"Bhanu Resume.pdf","level":"info","message":" Cloudinary upload successful","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:31.834Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" Parsing PDF...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:31.836Z"}
+{"level":"info","message":" PDF parsed successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:32.261Z"}
+{"level":"info","message":"Parsed text length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:32.262Z"}
+{"level":"info","message":" PDF parsed, text length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:32.263Z"}
+{"level":"info","message":" Analyzing with Gemini...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:32.264Z"}
+{"level":"info","message":" Calling Gemini API...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:32.265Z"}
+{"level":"info","message":" AI analysis complete","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:40.489Z"}
+{"level":"info","message":"Saving to database...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:40.490Z"}
+{"level":"info","message":" Database save complete","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:40.701Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:41.069Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:41.070Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:41.484Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:41.785Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:41.786Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:41.787Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:42.402Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:42.604Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:42.605Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:42.605Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:42.913Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.175Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.176Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.176Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.621Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.782Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.782Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:43.783Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.261Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.495Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.496Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.497Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.739Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.898Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.899Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:44.899Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.142Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.306Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.307Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.308Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.547Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.702Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.703Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.703Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:45.951Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.092Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.093Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.093Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.335Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.463Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.464Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.465Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.821Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.971Z"}
+{"level":"info","message":"Resume RAG memory updated successfully!","service":"career-gpt-backend","timestamp":"2025-12-04T18:24:46.972Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:25:50.451Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:25:50.614Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:25:50.734Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:25:50.893Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:26:00.574Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:26:00.743Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:26:00.863Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:26:01.150Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T18:29:22.262Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T18:29:22.267Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:29:22.269Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:29:22.270Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:29:22.272Z"}
+{"level":"info","message":" Calling Gemini API...","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:23.212Z"}
+{"level":"info","message":"Stored in Redis cache: match:R1VNTUlERUxMSSBCSEFOVSBQUkFTQUQgIENPTVBVVEVS...","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:27.501Z"}
+{"level":"info","message":"Job analysis completed in 5112ms for user 68cab2d287b3af541ff0bc76, score: 35, cached: false","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:27.502Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:27.909Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:27.911Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:28.217Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:28.421Z"}
+{"level":"info","message":"Job application RAG memory updated successfully!","service":"career-gpt-backend","timestamp":"2025-12-04T18:31:28.422Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T18:46:41.201Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T18:46:41.208Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T18:46:41.209Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:46:41.210Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T18:46:41.212Z"}
+{"level":"info","message":" Calling Gemini API...","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:44.331Z"}
+{"level":"info","message":"Stored in Redis cache: match:R1VNTUlERUxMSSBCSEFOVSBQUkFTQUQgIENPTVBVVEVS...","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:49.438Z"}
+{"level":"info","message":"Job analysis completed in 5928ms for user 68cab2d287b3af541ff0bc76, score: 45, cached: false","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:49.439Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:49.942Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:49.944Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:50.252Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:50.495Z"}
+{"level":"info","message":"Job application RAG memory updated successfully!","service":"career-gpt-backend","timestamp":"2025-12-04T18:47:50.496Z"}
+{"level":"info","message":" Calling Gemini API...","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:17.427Z"}
+{"level":"info","message":"Stored in Redis cache: match:R1VNTUlERUxMSSBCSEFOVSBQUkFTQUQgIENPTVBVVEVS...","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:22.137Z"}
+{"level":"info","message":"Job analysis completed in 5222ms for user 68cab2d287b3af541ff0bc76, score: 35, cached: false","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:22.138Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:22.545Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:22.546Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:22.958Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:23.161Z"}
+{"level":"info","message":"Job application RAG memory updated successfully!","service":"career-gpt-backend","timestamp":"2025-12-04T18:53:23.162Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:57:06.987Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:57:07.220Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:57:07.336Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:57:07.497Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:59:50.721Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:59:51.059Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T18:59:51.991Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T18:59:52.212Z"}
+{"level":"info","message":"Attempting to send email","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T18:59:59.289Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T18:59:59.454Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T18:59:59.455Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:00.187Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:00.476Z"}
+{"level":"info","message":"User profile updated in RAG memory","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:00.477Z"}
+{"level":"info","message":" Email sent successfully","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-04T19:00:01.022Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:22.171Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:22.188Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:22.189Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:22.190Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:22.192Z"}
+{"level":"info","message":"CHAT TITLE SAVED:","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:59.057Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:59.262Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T19:00:59.263Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:00.097Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:00.489Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:00.491Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:00.491Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:01.512Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:59.082Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:59.087Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:59.088Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:59.089Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:01:59.091Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T19:05:41.372Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T19:05:41.377Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T19:05:41.379Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:05:41.380Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:05:41.381Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T19:06:45.355Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T19:06:45.504Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T19:06:45.521Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T19:06:45.689Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:15.695Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:15.697Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:16.942Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:17.335Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:17.336Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:17.336Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:18.175Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:38.895Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:38.896Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:39.410Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:39.731Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:39.732Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:39.733Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T19:08:40.707Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:29.469Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:29.472Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:30.086Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:30.293Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:30.293Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:30.294Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:31.361Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:49.561Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:49.563Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:49.564Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:49.564Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:25:49.565Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:06.103Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:06.104Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:06.898Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:07.111Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:07.112Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:07.113Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-04T19:26:08.161Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T19:27:19.780Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T19:27:19.946Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T19:27:19.951Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T19:27:20.037Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:42:14.650Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:42:14.870Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:42:15.525Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:42:15.668Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:44:14.590Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:44:14.594Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:44:17.855Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:44:18.032Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:44:18.153Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:44:18.319Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:46:59.935Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:47:00.125Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:47:00.224Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:47:00.375Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:20.018Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:20.195Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:20.844Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:21.009Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:22.045Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:22.135Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:22.143Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T19:54:22.226Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:22.292Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:22.499Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:22.627Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:22.797Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:25.259Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:25.370Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:39.482Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:39.613Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:50.833Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:50.958Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:58.936Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:59.128Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:59.222Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:56:59.392Z"}
+{"exp":1764961199,"iat":1764874799,"id":"68cab2d287b3af541ff0bc76","level":"info","message":"uest user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.393Z"}
+{"level":"info","message":" Request userId:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.394Z"}
+{"level":"info","message":" Using userId:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.394Z"}
+{"level":"info","message":"Looking for roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.395Z"}
+{"level":"info","message":" Found roadmap:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.530Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.691Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.782Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.782Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.876Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.877Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.880Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.962Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:07.962Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:08.042Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:08.042Z"}
+{"key":"career-0-0","level":"info","message":" UPDATE MILESTONE CALLED:","roadmapId":"6931c840374603f530c1ef4e","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:09.460Z","value":true}
+{"level":"info","message":" PROCESSING SINGLE UPDATE:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:09.590Z"}
+{"level":"info","message":"CALCULATING PROGRESS AFTER UPDATE...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:09.591Z"}
+{"level":"info","message":" PROGRESS UPDATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:09.710Z"}
+{"bulk":{"career-0-0":true,"career-0-1":true,"career-0-2":true},"level":"info","message":" UPDATE MILESTONE CALLED:","roadmapId":"6931c840374603f530c1ef4e","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:10.993Z"}
+{"level":"info","message":" PROCESSING BULK UPDATE:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:11.120Z"}
+{"level":"info","message":"CALCULATING PROGRESS AFTER UPDATE...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:11.121Z"}
+{"level":"info","message":" PROGRESS UPDATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:11.223Z"}
+{"bulk":{"career-1-0":true,"career-1-1":true,"career-1-2":true},"level":"info","message":" UPDATE MILESTONE CALLED:","roadmapId":"6931c840374603f530c1ef4e","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:13.329Z"}
+{"level":"info","message":" PROCESSING BULK UPDATE:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:13.419Z"}
+{"level":"info","message":"CALCULATING PROGRESS AFTER UPDATE...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:13.419Z"}
+{"level":"info","message":" PROGRESS UPDATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:13.501Z"}
+{"bulk":{"career-2-0":true,"career-2-1":true,"career-2-2":true},"level":"info","message":" UPDATE MILESTONE CALLED:","roadmapId":"6931c840374603f530c1ef4e","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:15.251Z"}
+{"level":"info","message":" PROCESSING BULK UPDATE:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:15.377Z"}
+{"level":"info","message":"CALCULATING PROGRESS AFTER UPDATE...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:15.377Z"}
+{"level":"info","message":" PROGRESS UPDATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:15.455Z"}
+{"bulk":{"career-3-0":true,"career-3-1":true,"career-3-2":true},"level":"info","message":" UPDATE MILESTONE CALLED:","roadmapId":"6931c840374603f530c1ef4e","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:16.082Z"}
+{"level":"info","message":" PROCESSING BULK UPDATE:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:16.160Z"}
+{"level":"info","message":"CALCULATING PROGRESS AFTER UPDATE...","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:16.160Z"}
+{"level":"info","message":" PROGRESS UPDATED","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:16.249Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:22.628Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:22.827Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:22.917Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:23.073Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:24.256Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:24.357Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:41.090Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:41.092Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:41.093Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:41.093Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-04T19:57:41.094Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:59:49.304Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:59:49.506Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-04T19:59:50.249Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-04T19:59:50.410Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:11.888Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:11.978Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:11.979Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.093Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.094Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.098Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.176Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.177Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.260Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T20:00:12.260Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:03:36.856Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:03:36.971Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:03:36.975Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:03:37.050Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:04:38.918Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:04:39.053Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:04:39.057Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:04:39.132Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:10:03.511Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:10:04.254Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:10:04.257Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:10:04.327Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.237Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.347Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.347Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.431Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.432Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.435Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.508Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.509Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.581Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T20:13:42.581Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.701Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.784Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.785Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.873Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.873Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.876Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.957Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:14.957Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:15.030Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-04T20:16:15.030Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:18:27.381Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:18:27.497Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-04T20:18:27.500Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-04T20:18:27.585Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-05T13:15:37.493Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-05T13:15:37.498Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-05T13:15:37.499Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-05T13:15:37.500Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-05T13:15:37.501Z"}
+{"level":"info","message":"Attempting to send email","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-05T13:16:42.298Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-05T13:16:42.408Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-05T13:16:42.410Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-05T13:16:43.115Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-05T13:16:43.296Z"}
+{"level":"info","message":"User profile updated in RAG memory","service":"career-gpt-backend","timestamp":"2025-12-05T13:16:43.297Z"}
+{"level":"info","message":" Email sent successfully","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-05T13:16:43.741Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:30.157Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:30.502Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:30.740Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:31.044Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:39.680Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:39.950Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:41.229Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:41.488Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:42.937Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:43.028Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:43.034Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-05T13:19:43.107Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:20:53.982Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:20:54.428Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:20:54.631Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:20:54.982Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:03.651Z"}
+{"level":"info","message":" Fetching specific resume:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:03.802Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:27.283Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:27.550Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:27.681Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:27.959Z"}
+{"exp":1765027002,"iat":1764940602,"id":"68cab2d287b3af541ff0bc76","level":"info","message":"uest user:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:35.689Z"}
+{"level":"info","message":" Request userId:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:35.690Z"}
+{"level":"info","message":" Using userId:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:35.690Z"}
+{"level":"info","message":"Looking for roadmap:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:35.691Z"}
+{"level":"info","message":" Found roadmap:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:35.823Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.072Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.157Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.157Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.245Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.245Z"}
+{"level":"info","message":" GET PROGRESS CALLED FOR:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.252Z"}
+{"level":"info","message":" ROADMAP FOUND:","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.350Z"}
+{"level":"info","message":" CALCULATING PROGRESS...","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.351Z"}
+{"level":"info","message":" PROGRESS CALCULATED","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.431Z"}
+{"level":"info","message":" RETURNING PROGRESS DATA","service":"career-gpt-backend","timestamp":"2025-12-05T13:21:36.432Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:29.645Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:29.809Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:29.821Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:29.908Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"CHAT TITLE SAVED:","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:43.328Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:43.531Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:43.532Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:44.967Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:45.432Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:45.433Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:45.434Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-05T13:22:46.602Z"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:05.854Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:05.855Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:08.621Z"}
+{"level":"info","message":"Memory search returned 3 results","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:08.977Z"}
+{"level":"info","message":"RAG: found user memory items for prompt","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:08.978Z"}
+{"level":"info","message":"ENHANCED PROMPT:","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:08.979Z"}
+{"level":"info","message":" STREAMING STARTED","service":"career-gpt-backend","timestamp":"2025-12-05T13:23:10.257Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-06T11:47:16.547Z","userId":"68cab2d287b3af541ff0bc76"}
+{"cause":{"beforeHandshake":false,"errorLabelSet":{}},"errorLabelSet":{},"level":"error","message":"Get profile failed: 48370000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\\ws\\deps\\openssl\\openssl\\ssl\\record\\rec_layer_s3.c:1605:SSL alert number 80\n","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":{"$oid":"7fffffff0000000000000080"},"maxSetVersion":46,"servers":{"ac-atayfcu-shard-00-00.gmcgwaz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-atayfcu-shard-00-00.gmcgwaz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":81425681,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-atayfcu-shard-00-01.gmcgwaz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-atayfcu-shard-00-01.gmcgwaz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":81425682,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-atayfcu-shard-00-02.gmcgwaz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-atayfcu-shard-00-02.gmcgwaz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":81425683,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-diy65i-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"career-gpt-backend","stack":"MongoServerSelectionError: 48370000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\\ws\\deps\\openssl\\openssl\\ssl\\record\\rec_layer_s3.c:1605:SSL alert number 80\n\n    at Topology.selectServer (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\sdam\\topology.js:326:38)\n    at async tryOperation (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:145:18)\n    at async executeOperation (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:632:27)\n    at async FindCursor.fetchBatch (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:666:13)\n    at async FindCursor.next (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:342:17)\n    at async Collection.findOne (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\collection.js:277:21)\n    at async model.Query._findOne (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\query.js:2710:15)\n    at async model.Query.exec (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\query.js:4627:63)","timestamp":"2025-12-06T11:47:48.651Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-06T11:48:00.756Z","userId":"68cab2d287b3af541ff0bc76"}
+{"cause":{"beforeHandshake":false,"errorLabelSet":{}},"errorLabelSet":{},"level":"error","message":"Get profile failed: 48370000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\\ws\\deps\\openssl\\openssl\\ssl\\record\\rec_layer_s3.c:1605:SSL alert number 80\n","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":{"$oid":"7fffffff0000000000000080"},"maxSetVersion":46,"servers":{"ac-atayfcu-shard-00-00.gmcgwaz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-atayfcu-shard-00-00.gmcgwaz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":81468280,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-atayfcu-shard-00-01.gmcgwaz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-atayfcu-shard-00-01.gmcgwaz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":81468075,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-atayfcu-shard-00-02.gmcgwaz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-atayfcu-shard-00-02.gmcgwaz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":81468075,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-diy65i-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"career-gpt-backend","stack":"MongoServerSelectionError: 48370000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\\ws\\deps\\openssl\\openssl\\ssl\\record\\rec_layer_s3.c:1605:SSL alert number 80\n\n    at Topology.selectServer (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\sdam\\topology.js:326:38)\n    at async tryOperation (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:145:18)\n    at async executeOperation (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\operations\\execute_operation.js:75:16)\n    at async FindCursor._initialize (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\find_cursor.js:61:26)\n    at async FindCursor.cursorInit (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:632:27)\n    at async FindCursor.fetchBatch (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:666:13)\n    at async FindCursor.next (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\cursor\\abstract_cursor.js:342:17)\n    at async Collection.findOne (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongodb\\lib\\collection.js:277:21)\n    at async model.Query._findOne (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\query.js:2710:15)\n    at async model.Query.exec (C:\\Users\\banu\\Desktop\\career-gpt\\career-gpt-backend\\node_modules\\mongoose\\lib\\query.js:4627:63)","timestamp":"2025-12-06T11:48:30.771Z"}
+{"level":"info","message":"=== DEBUG IN SERVER.JS ===","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:28.947Z"}
+{"level":"info","message":"API Key from env:","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:28.952Z"}
+{"level":"info","message":"Key length:","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:28.954Z"}
+{"level":"info","message":"Key first chars:","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:28.955Z"}
+{"0":"GEMINI_API_KEY","1":"MONGO_URL","level":"info","message":"All env vars:","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:28.957Z"}
+{"level":"info","message":"Attempting to send email","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-06T11:54:36.229Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":"🔵 Google Embedding Service - START","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:36.377Z"}
+{"level":"info","message":"Sending embedding request to Google...","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:36.378Z"}
+{"level":"info","message":" Google API response status: 200","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:37.265Z"}
+{"level":"info","message":" Memory saved successfully","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:37.542Z"}
+{"level":"info","message":"User profile updated in RAG memory","service":"career-gpt-backend","timestamp":"2025-12-06T11:54:37.543Z"}
+{"level":"info","message":" Email sent successfully","service":"career-gpt-backend","subject":"Login Alert - CareerGPT","timestamp":"2025-12-06T11:54:38.055Z","to":"pawankalyan0345556@gmail.com"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:23.303Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:23.627Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:23.749Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:24.036Z"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:57.620Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:58.442Z"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:58.530Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:58.659Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Fetching user profile:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:58.667Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":"Profile fetched successfully:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:58.736Z","userId":"68cab2d287b3af541ff0bc76"}
+{"level":"info","message":" Fetching all resumes for user:","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:59.418Z"}
+{"level":"info","message":" Found 5 resumes for user","service":"career-gpt-backend","timestamp":"2025-12-06T11:55:59.616Z"}

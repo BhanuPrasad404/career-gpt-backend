@@ -28,7 +28,7 @@ class GeminiService {
             }
         };
 
-        logger.info(' Calling Gemini API...'); // CHANGED
+        logger.info(' Calling Gemini API...'); 
         const response = await fetch(url, {
             method: 'POST',
             headers: {
@@ -300,7 +300,7 @@ const uploadResume = async (req, res) => {
         });
 
     } catch (error) {
-        logger.error(' Resume upload failed', error, { 
+        logger.error(' Resume upload failed', error, {
             userId: req.user?.id,
             fileName: req.file?.originalname
         });
