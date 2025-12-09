@@ -253,7 +253,7 @@ EXAMPLE OF GOOD RESPONSE:
 NOW ANALYZE THE PROVIDED RESUME AND JOB DESCRIPTION:
 `;
         const result = await geminiService.callGeminiAPI(prompt);
-        const responseText = result.candidates[0].content.parts[0].text;
+        const responseText = result?.choices?.[0]?.message?.content;
         const cleanJson = responseText.replace(/```json|```/g, '').trim();
 
         // Validate AI response
