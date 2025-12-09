@@ -90,7 +90,6 @@ const uploadResume = async (req, res) => {
             });
         }
 
-
         logger.info(' Uploading to Cloudinary', { // CHANGED
             userId,
             folder: 'career-gpt/resumes'
@@ -385,7 +384,9 @@ Focus on actionable insights that would actually help this candidate get hired.
         const result = await geminiService.callGeminiAPI(prompt);
 
         // Extract text from response
-        const responseText = result.choices[0].message.content;
+        //const responseText = result.choices[0].message.content;
+
+        const responseText = result?.choices?.[0]?.message?.content;
 
         // Clean the response
         const cleanJson = responseText.replace(/```json|```/g, '').trim();
