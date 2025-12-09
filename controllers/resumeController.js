@@ -9,37 +9,33 @@ import logger from '../utils/logger.js';
 // Use YOUR Gemini class that already works
 class GeminiService {
     constructor() {
-        this.GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-        this.GEMINI_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
+        // Change to GROQ
+        this.GROQ_API_KEY = process.env.GROQ_API_KEY;
+        this.GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
     }
 
     async callGeminiAPI(prompt) {
-        const url = `${this.GEMINI_BASE_URL}/gemini-2.0-flash:generateContent?key=${this.GEMINI_API_KEY}`;
-
-        const requestBody = {
-            contents: [{
-                parts: [{
-                    text: prompt
-                }]
-            }],
-            generationConfig: {
-                temperature: 0.7,
-                maxOutputTokens: 8000,
-            }
-        };
-
-        logger.info(' Calling Gemini API...'); 
-        const response = await fetch(url, {
+        // Actually call Groq
+        const response = await fetch(this.GROQ_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${this.GROQ_API_KEY}`
             },
-            body: JSON.stringify(requestBody)
+            body: JSON.stringify({
+                model: 'llama-3.3-70b-versatile', // Use Groq model
+                messages: [{
+                    role: 'user',
+                    content: prompt
+                }],
+                temperature: 0.7,
+                max_tokens: 8000
+            })
         });
 
         if (!response.ok) {
             const errorText = await response.text();
-            throw new Error(`API Error: ${response.status} ${response.statusText} - ${errorText}`);
+            throw new Error(`Groq API Error: ${response.status} ${response.statusText} - ${errorText}`);
         }
 
         return await response.json();
@@ -389,7 +385,7 @@ Focus on actionable insights that would actually help this candidate get hired.
         const result = await geminiService.callGeminiAPI(prompt);
 
         // Extract text from response
-        const responseText = result.candidates[0].content.parts[0].text;
+        const responseText = result.choices[0].message.content;
 
         // Clean the response
         const cleanJson = responseText.replace(/```json|```/g, '').trim();
